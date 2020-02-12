@@ -18,5 +18,6 @@
 
 ## Замечания
 
-Полезно ознакомиться https://docs.microsoft.com/ru-ru/dotnet/core/tutorials/with-visual-studio-code
-Ищите и устанавливайте подходящие плагины для VSCode, они значительно облегчают процесс разработки.
+1. Полезно ознакомиться https://docs.microsoft.com/ru-ru/dotnet/core/tutorials/with-visual-studio-code
+2. gRpc в AspNet Core 3.1: https://docs.microsoft.com/ru-ru/aspnet/core/grpc/
+3. Ищите и пробуйте плагины для VSCode, они значительно облегчают процесс разработки.
