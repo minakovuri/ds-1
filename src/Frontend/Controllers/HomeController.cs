@@ -27,13 +27,14 @@ namespace Frontend.Controllers
         }
 
         [HttpPost]
-        async public Task<IActionResult> HandleAddTaskRequest()
+        async public Task<IActionResult> HandleAddTaskRequest(String description)
         {
             using var channel = GrpcChannel.ForAddress("http://localhost:5000");
             var client = new Job.JobClient(channel);
-            var reply = await client.RegisterAsync(new RegisterRequest { Description = "Шалом" });
+            var reply = await client.RegisterAsync(new RegisterRequest { Description = description });
 
             ViewBag.Id = reply.Id;
+            ViewBag.Description = description;
 
             return View("Task");
         }
